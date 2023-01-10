@@ -1,0 +1,46 @@
+*{
+    box-sizing: border-box;
+}
+:root.dark {
+    --color-base-bg:rgb(18,18,18);
+    --color-btn-bg:rgb(36,36,36);
+    --btn-border:1px solid rgb(220,220,220);
+    --color-base-text:rgb(240,240,240);
+
+}
+:root.light {
+    --border-btn: 1px solid rgb(36, 36, 36);
+    --color-base-bg: rgb(240, 240, 240);
+    --color-base-text: rgb(18, 18, 18);
+    --color-btn-bg: rgb(220, 220, 220);
+  }
+body,.theme-toggle{
+    color: var(--color-base-text);
+}
+body{
+    background-color: var(--color-base-bg);
+    padding: 10px;
+    
+}
+.container{
+    height: 100vh;
+display: flex;
+align-items: center;
+justify-content: center;
+flex-direction: column;
+}
+p{
+    font-size: 1.5rem;
+}
+.theme-toggle{
+    background-color: var(--color-btn-bg);
+    border: var(--btn-border);
+    font-size: 1.1rem;
+    padding: 10px 20px;
+}
+.theme-toggle:hover{
+    cursor: pointer;
+}
+.theme-toggle:focus{
+    outline: var(--btn-border);
+}
